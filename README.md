@@ -8,7 +8,7 @@ Objetivo: construir un portfolio verificable de competencias cloud — no teorí
 
 | Herramienta | Uso |
 |---|---|
-| [Floci](https://github.com/floci/floci) | Emulador AWS local (`localhost:4566`) |
+| [Floci](https://github.com/floci-io/floci#why-floci) | Emulador AWS local (`localhost:4566`) |
 | AWS CLI | Gestión de recursos y automatización |
 | Python / Bash | Scripts y utilidades |
 | Terraform | Infraestructura como código *(próximamente)* |
