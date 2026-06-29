@@ -18,8 +18,11 @@ Objetivo: construir un portfolio verificable de competencias cloud — no teorí
 
 ```
 Labs/
-├── lab001-IAM/
-└── lab002-S3/          ← próximamente
+├── lab001-IAM-Identity and Access Management/
+├── lab002-S3-Simple Storage Service/
+├── lab003-EC2-Elastic Compute Cloud/
+├── lab004-ALB+AZs/
+└── lab005-Route53-DNS/
 ```
 
 Cada lab incluye su propio `README.md` con objetivos, comandos ejecutados, resultados y aprendizajes.
@@ -28,8 +31,11 @@ Cada lab incluye su propio `README.md` con objetivos, comandos ejecutados, resul
 
 | Lab | Servicio | Estado | Conceptos clave |
 |-----|----------|--------|-----------------|
-| [Lab001](Labs/lab001-IAM/) | IAM | ✅ Completado | usuarios, políticas, mínimo privilegio |
-| Lab002 | S3 | 🔜 Próximamente | — |
+| [Lab001](<Labs/lab001-IAM-Identity and Access Management/>) | IAM | ✅ Completado | usuarios, políticas, mínimo privilegio |
+| [Lab002](<Labs/lab002-S3-Simple Storage Service/>) | S3 | 🔜 Pendiente | — |
+| [Lab003](<Labs/lab003-EC2-Elastic Compute Cloud/>) | EC2 | 🔜 Pendiente | — |
+| [Lab004](<Labs/lab004-ALB+AZs/>) | ALB + AZs | 🔜 Pendiente | — |
+| [Lab005](<Labs/lab005-Route53-DNS/>) | Route 53 | 🔜 Pendiente | — |
 
 ## Sobre el autor
 
