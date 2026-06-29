@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Aprender a crear y gestionar usuarios IAM usando AWS CLI contra Floci.
+Aprender a crear y gestionar usuarios IAM usando AWS CLI con emulador Floci.
 
 ## Prerequisitos
 
@@ -118,6 +118,7 @@ Solo queda `samuel-devops-practica` ✓
 ```bash
 aws --endpoint-url http://localhost:4566 iam attach-user-policy --user-name samuel-devops-practica --policy-arn arn:aws:iam::aws:policy/ReadOnlyAccess
 ```
+
 **Resultado:** Sin output = éxito ✓
 
 ## Paso 6 — Verificar política asignada
@@ -125,7 +126,9 @@ aws --endpoint-url http://localhost:4566 iam attach-user-policy --user-name samu
 ```bash
 aws --endpoint-url http://localhost:4566 iam list-attached-user-policies --user-name samuel-devops-practica
 ```
+
 **Resultado:**
+
 ```json
 {
     "AttachedPolicies": [
@@ -136,6 +139,7 @@ aws --endpoint-url http://localhost:4566 iam list-attached-user-policies --user-
     ]
 }
 ```
+
 **Nota:** ReadOnlyAccess = usuario puede ver todo pero no modificar nada.
 Principio de mínimo privilegio aplicado ✓
 
@@ -153,8 +157,8 @@ Principio de mínimo privilegio aplicado ✓
 - **Usuario IAM sin política = sin acceso a nada** — crear un usuario no le da permisos automáticamente
 - **Sin output = éxito en AWS CLI** — comandos como `delete-user` y `attach-user-policy` no devuelven JSON cuando funcionan
 - **Principio de mínimo privilegio** — asignar solo los permisos necesarios (ej. `ReadOnlyAccess` en lugar de `AdministratorAccess`)
-- **Windows no usa `\` para saltos de línea** — en PowerShell usar `` ` `` (backtick) o escribir el comando en una sola línea
-- **Account ID `000000000000` = Floci**, ID real = AWS producción — el ARN revela en qué entorno estás trabajando
+- **Windows no usa `\` para saltos de línea** — en PowerShell usar ``` (backtick) o escribir el comando en una sola línea
+- **Account ID** `000000000000` **= Floci**, ID real = AWS producción — el ARN revela en qué entorno estás trabajando
 
 ### Comandos del lab
 
